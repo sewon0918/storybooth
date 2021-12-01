@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/p5.sound.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>
+        <!-- STORYBOOTH -->
+    </h1>
+    <link rel="icon" href="favicon.ico">
+
+    <div id="bigimg">
+        <img src="" id="bb" onclick="hideBigImg('bigimg')">
+    </div>
+
+
+    <img id="camera" src="data/camera.png" onclick="photo()">
+
+
+    <div class="img">
+        <img id="selectedImage">
+        <button type="button" id="delete" onclick="deleteImage()">X</button>
+        <button type="button" id="gray" onclick="changeFilter()">GRAY</button>
+    </div>
+    <div id="story">
+    </div>
+    <div class="file_input">
+        <input type="text" readonly="readonly" id="file_route">
+        <label for="fileInput">
+              <input type="file" id = "fileInput" onchange="readURL(this)" accept="image/png, image/jpeg">
+        </label>
+    </div>
+    <img id="upload" src="data/upload.png" onclick="sendToServer()">
+    <!-- <img id="selectIcon" src="select.png"> -->
+
+
+    <!-- <div class="img">
+        <canvas id="cnvs" class="canvas__canvas"></canvas>
+        <img id="selectedImage">
+        <button type="button" id="delete" onclick="deleteImage()">X</button>
+      </div> -->
+
+
+
+
+
+
+</body>
+
+</html>
