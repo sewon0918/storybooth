@@ -16,7 +16,7 @@
 
 * [Java code](Java_Code/) for server side
 * [Javascript code](Javascript_Code/) for client side
-* [Video](Video/) for demo
+* [Video](https://youtu.be/EtgIPQsygEo) for demo
 * README.md (this file) for description of project. 
 
 ## Description
